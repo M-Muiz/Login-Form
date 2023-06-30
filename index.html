@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoSave Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div id="singUp" class="singup">
+        <div class="heading">SingUp</div>
+    <div class="settingLabel">
+        <label>
+            Enter Name
+        </label>
+    </div>
+    <input required="required" type="text" id="Name">
+    <div class="settingLabel">
+        <label>
+            Enter Email
+        </label>
+    </div>
+    <input  required="required" type="text" id="email">
+    <div class="settingLabel">
+        <label>
+            Enter Password
+        </label>
+    </div>
+    <input required="required" type="password" id="password">
+    <div class="settingLabel">
+        <label>
+            Confirom Password
+        </label>
+    </div>
+    <input required="required" type="password" id="confiromPassword">
+    <div class="text">Already have an Account ?<span class="span-login"><a href="#" onclick="switchContainer()">Login</a></span></div>
+    
+    <button class="create hover" onclick="singUp()">Create Account</button>
+    
+    </div> 
+    
+    
+    <div id="login" class="login active">
+        <div class="heading">Login</div>
+        <div class="settingLabel">
+        <label>
+            Enter Email
+        </label>
+    </div>
+    <input type="text" id="loginEmail" required="required">
+    <div class="settingLabel">
+        <label>
+            Enter Password
+        </label>
+    </div>
+    <input type="password" id="loginPassword" required="requuired">
+    
+    <div class="icons">
+      Continue With: <span class="span-icons">
+        <img src="css/icons/google.png" alt="">
+        <img src="css/icons/facebook.png" alt="">
+      </span>
+    
+    </div>
+    
+    
+    <div class="text">if You don't have account<span class="span-login"><a href="#"  onclick="switchContainer()">SinpUp</a></span></div>
+    <button class="create hover" onclick="login()">Login</button>
+    
+    
+    </div> 
+
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="java/app.js"></script>
+</body>
+</html>
